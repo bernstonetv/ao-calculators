@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sum Calculator</title>
+    <title>Resource Refining Calculator</title>
     <style>
         body {
             margin: 0;
@@ -87,7 +87,7 @@
                         <option value="8">8</option>
                     </select>
                 </td>
-                <td colspan="4"></td>
+                <td>Usage Fee</td><td><input type="number" id="usageFee" value="350" oninput="calculatePQ()"></td>    
             </tr>
             <tr>
                 <td>Enchantment</td>
@@ -99,27 +99,16 @@
                         <option value="3" selected>3</option>
                     </select>
                 </td>
-                <td colspan="4"></td>
-            </tr>
-            <tr>
-                <td>Usage Fee</td><td><input type="number" id="usageFee" value="350" oninput="calculatePQ()"></td>
-                <td colspan="4"></td>
-            </tr>
-            <tr>
-                <td>Return Rate</td><td><input type="number" id="returnRate" value="53.90" oninput="calculatePQ()"></td>
-                <td colspan="4"></td>
+                    <td>Return Rate</td><td><input type="number" id="returnRate" value="53.90" oninput="calculatePQ()"></td>
             </tr>
             <tr>
                 <td>Active Premium?</td>
-                <td>
-                    <select id="activePremium" onchange="calculatePQ()">
-                        <option value="No" selected>No</option>
-                        <option value="Yes">Yes</option>
-                    </select>
-                </td>
-                <td colspan="4"></td>
-            </tr>
-            <tr>
+                    <td>
+                        <select id="activePremium" onchange="calculatePQ()">
+                            <option value="No" selected>No</option>
+                            <option value="Yes">Yes</option>
+                        </select>
+                    </td>
                 <td>Sell Order?</td>
                 <td>
                     <select id="sellOrder" onchange="calculatePQ()">
@@ -127,7 +116,6 @@
                         <option value="Yes">Yes</option>
                     </select>
                 </td>
-                <td colspan="4"></td>
             </tr>
             <tr>
                 <th>Buy Order?</th><th>Type</th><th>Price</th><th>Pcs</th><th>Total Cost</th><th>Sell Price</th><th>% Profit</th>
@@ -156,7 +144,6 @@
                 <td>Refined</td>
                 <td><input type="number" value="9800" id="refinedPrice" oninput="calculatePQ()"></td>
                 <td><input type="number" value="1" id="refinedPcs" oninput="calculatePQ()"></td>
-                <td colspan="3"></td>
             </tr>
         </table>
     </div>
