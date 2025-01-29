@@ -81,7 +81,7 @@
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
-                        <option value="5">5</option>
+                        <option value="5" selected>5</option>
                         <option value="6">6</option>
                         <option value="7">7</option>
                         <option value="8">8</option>
@@ -96,7 +96,7 @@
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
-                        <option value="3">3</option>
+                        <option value="3" selected>3</option>
                     </select>
                 </td>
                     <td>Return Rate</td><td><input type="number" id="returnRate" value="53.90" oninput="calculatePQ()"></td>
@@ -105,14 +105,14 @@
                 <td>Active Premium?</td>
                     <td>
                         <select id="activePremium" onchange="calculatePQ()">
-                            <option value="No">No</option>
+                            <option value="No" selected>No</option>
                             <option value="Yes">Yes</option>
                         </select>
                     </td>
                 <td>Sell Order?</td>
                 <td>
                     <select id="sellOrder" onchange="calculatePQ()">
-                        <option value="No">No</option>
+                        <option value="No" selected>No</option>
                         <option value="Yes">Yes</option>
                     </select>
                 </td>
@@ -123,7 +123,7 @@
             <tr>
                 <td>
                     <select id="rawBuyOrder" onchange="calculatePQ()">
-                        <option value="No">No</option>
+                        <option value="No" selected>No</option>
                         <option value="Yes">Yes</option>
                     </select>
                 </td>
@@ -137,7 +137,7 @@
             <tr>
                 <td>
                     <select id="refinedBuyOrder" onchange="calculatePQ()">
-                        <option value="No">No</option>
+                        <option value="No" selected>No</option>
                         <option value="Yes">Yes</option>
                     </select>
                 </td>
